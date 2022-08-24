@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Poppins:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Oswald:wght@600&family=Poppins:wght@500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
   font-family: 'Poppins';
 }
-body{
+html{
+  scroll-behavior: smooth;
+}
+#home{
   height: 100vh;
   width: 100%;
   background: url(../img/bg.png) top center no-repeat;
@@ -12,6 +15,7 @@ body{
   overflow: hidden;
 }
 header{
+  position: absolute;
   width: 100%;
   margin-top: 50px;
 }
@@ -86,7 +90,7 @@ header nav .search input{
 header nav .search input:focus{
   outline: 2px solid #ffffff;
 }
-.container-box{
+#home .container-box{
   width: 90%;
   margin: 0 auto;
   display: flex;
@@ -113,7 +117,7 @@ header nav .search input:focus{
 }
 #home .container-box .col-2 img{
   width: 540px;
-  margin-top: 10px;
+  margin-top: 90px;
   margin-right: 20px;
 }
 #home .container-box .col-1 .button a{
@@ -139,4 +143,179 @@ header nav .search input:focus{
 }
 #home .container-box .col-1 .button:hover{
   transform: translateY(-5px);
+}
+#shop{
+  height: 100vh;
+  background: url('../img/shop-bg.png') center no-repeat;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+}
+#shop .container-box{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+#shop .container-box .col-1{
+  margin-top: 40px;
+  width: 650px;
+  height: 550px;
+  background: #F1552B;
+  border-radius: 10px;
+  position: relative;
+}
+#shop .container-box .col-1 span{
+  color: white;
+  font-family: 'Oswald';
+  font-size: 130px;
+  font-weight: 700;
+  transform: rotate(-90deg);
+  position: absolute;
+}
+#shop .container-box .col-1 span:nth-child(1){
+  left: 330px;
+  top: 170px;
+  opacity: 80%;
+}
+#shop .container-box .col-1 span:nth-child(2){
+  left: 210px;
+  top: 170px;
+  opacity: 65%;
+}
+#shop .container-box .col-1 span:nth-child(3){
+  left: 90px;
+  top: 170px;
+  opacity: 45%;
+}
+#shop .container-box .col-1 span:nth-child(4){
+  left: -35px;
+  top: 170px;
+  opacity: 25%;
+}
+#shop .container-box .col-1 span:nth-child(5){
+  left: -160px;
+  top: 170px;
+  opacity: 10%;
+}
+#shop .container-box .col-2{
+  position: absolute;
+  right: 0px;
+  top: 95px;
+  width: 800px;
+  height: 450px;
+  background: rgba(39, 44, 78, 50%);
+  backdrop-filter: blur(300px);
+  border-radius: 10px;
+}
+#shop .container-box .col-2 img{
+  width: 500px;
+  position: absolute;
+  left: -350px;
+  filter: drop-shadow(0px 24px 70px rgba(28, 41, 52, 54%));
+}
+#shop .container-box .col-2 .info{
+  padding: 50px 0 0 200px;
+  color: #ffffff;
+}
+#shop .container-box .col-2 .info h2{
+  font-size: 40px;
+  font-family: 'Barlow';
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+#shop .container-box .col-2 .info span{
+  font-size: 20px;
+  font-family: 'Barlow';
+  font-weight: 400;
+}
+#shop .container-box .col-2 .info .price{
+  font-size: 30px;
+  font-family: 'Barlow';
+  margin-top: 30px;
+  font-weight: 500;
+  display: block;
+}
+#shop .container-box .col-2 .info .color{
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+#shop .container-box .col-2 .info .color .red{
+  cursor: pointer;
+  margin-left: 20px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #f1552b;
+  border-radius: 50%;
+}
+#shop .container-box .col-2 .info .color .black{
+  cursor: pointer;
+  margin-left: 20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #000000;
+  border-radius: 50%;
+}
+#shop .container-box .col-2 .info .color .white{
+  cursor: pointer;
+  margin-left: 20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+#shop .container-box .col-2 .info .color .yellow{
+  cursor: pointer;
+  margin-left: 20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #FFFF00;
+  border-radius: 50%;
+}
+#shop .container-box .col-2 .info p{
+  padding-right: 200px;
+  line-height: 25px;
+  font-size: 15px;
+  font-family: 'Barlow';
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+#shop .container-box .col-2 .info a{
+  font-size: 15px;
+  font-family: 'Barlow';
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#shop .container-box .col-2 .info .cart{
+  margin-right: 20px;
+  padding: 10px 20px;
+  background: #E24A51;
+  border-radius: 50px;
+  border: 1px solid #F45F66;
+}
+#shop .container-box .col-2 .info .wish{
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  padding: 5px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  cursor: pointer;
+}
+#shop .container-box .col-2 .info .wish i{
+  color: rgba(226, 74, 81, 76%);
+  font-size: 12px;
+  margin-right: 5px;
+}
+#shop .container-box .col-2 .info .wish:hover{
+  border: 2px solid #F45F66;
 }
