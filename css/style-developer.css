@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Poppins:wght@500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+body{
+  height: 100vh;
+  width: 100%;
+  background: url(../img/bg.png) top center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+header{
+  width: 100%;
+  margin-top: 50px;
+}
+header nav{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+header nav .logo{
+  cursor: pointer;
+  flex-basis: 40%;
+}
+header nav .logo img{
+  width: 200px;
+}
+header nav ul{
+  display: flex;
+  list-style-type: none;
+}
+header nav ul li{
+  margin-right: 50px;
+  position: relative;
+}
+header nav ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+}
+header nav ul li a::before{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  background: #f1552b;
+  transition: all 0.3s ease-in-out;
+  opacity: 80%;
+}
+header nav ul li a:hover::before{
+  opacity: 80%;
+  width: 100%;
+}
+header nav ul li a:hover{
+  color: #f1552b;
+}
+header nav .search{
+  flex-basis: 20%;
+  position: relative;
+}
+header nav .search i{
+  color: #3d3d3d;
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}
+header nav .search input{
+  background: transparent;
+  color: #ffffff;
+  border: none;
+  outline: 2px solid #f1552b;
+  border-radius: 50px;
+  padding: 5px;
+  padding-left: 30px;
+  width: 150px;
+}
+header nav .search input:focus{
+  outline: 2px solid #ffffff;
+}
+.container-box{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#home .container-box .col-1 h1{
+  background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 80%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 80px;
+  font-family: 'Oswald';
+}
+#home .container-box .col-1 p{
+  background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 80%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  margin-top: -20px;
+  letter-spacing: 2px;
+  font-family: 'Poppins';
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+#home .container-box .col-2 img{
+  width: 540px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+#home .container-box .col-1 .button a{
+  text-decoration: none;
+  text-transform: uppercase;
+  background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 80%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+#home .container-box .col-1 .button{
+  cursor: pointer;
+  background: transparent;
+  display: inline-block;
+  border: 2px solid #f1552b;
+  padding: 10px 20px;
+  position: absolute;
+  border-radius: 50px;
+  box-shadow: 0px 0px 20px -15px #f1552b inset, 0px 0px 40px -15px #f1552b;
+  transition: all 0.5s ease-in-out;
+}
+#home .container-box .col-1 .button:hover{
+  transform: translateY(-5px);
+}
